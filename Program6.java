@@ -17,12 +17,25 @@ public class Program6 {
         double diameter = 2 * radius;
         double area = (PI)*(radius*radius);
         double circumference = PI*diameter; 
-
         
-        System.out.printf("The Radius of the circle = %.3f%n", radius);
-        System.out.printf("The Diameter of the circle = %.3f%n", diameter);
-        System.out.printf("The Area of the circle = %.3f%n", area);
-        System.out.printf("The Circumference of the circle = %.3f%n", circumference);      
+        
+        radius = ((int)(radius*1000+0.5));
+        radius = (radius/1000);
+        
+        diameter = ((int)(diameter*1000+0.5));
+        diameter = (diameter/1000);
+        
+        area = ((int)(area*1000+0.5));
+        area = (area/1000);
+        
+        circumference = ((int)(circumference*1000+0.5));
+        circumference = (circumference/1000);
+        
+        
+        System.out.println("The Radius of the circle = " + radius);
+        System.out.println("The Diameter of the circle = " + diameter);
+        System.out.println("The Area of the circle = "+ area);
+        System.out.println("The Circumference of the circle = " + circumference);      
     }
 }
 
